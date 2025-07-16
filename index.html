@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>남산분원 전시실 탐구일지 홈</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans KR', 'Segoe UI', sans-serif;
+      background: #e3f2fd;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .home-container {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 36px 12px 32px 12px;
+    }
+    .home-title {
+      text-align: center;
+      font-size: 2.1em;
+      font-weight: 800;
+      color: #1976d2;
+      margin-bottom: 32px;
+      letter-spacing: -1px;
+    }
+    .room-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+    .room-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 16px rgba(33, 150, 243, 0.10);
+      border: 2px solid #90caf9;
+      font-size: 1.28em;
+      font-weight: 700;
+      color: #1976d2;
+      text-decoration: none;
+      padding: 32px 0;
+      transition: background 0.18s, color 0.18s, transform 0.13s;
+      text-align: center;
+      min-height: 60px;
+      cursor: pointer;
+    }
+    .room-btn:hover {
+      background: #e3f2fd;
+      color: #0d47a1;
+      transform: scale(1.04);
+      box-shadow: 0 8px 24px rgba(33, 150, 243, 0.16);
+    }
+    .guide-box {
+      background: #fff;
+      border-radius: 14px;
+      border-left: 6px solid #1976d2;
+      box-shadow: 0 2px 8px rgba(33,150,243,0.07);
+      padding: 12px 12px 14px 14px;
+      font-size: 1.04em;
+      color: #1976d2;
+      white-space: pre-wrap;
+      min-height: 48px;
+      margin-top: 8px;
+      margin-bottom: 0;
+      animation: fadeInScale 0.5s;
+    }
+    @keyframes fadeInScale {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .guide-en {
+      margin-top: 12px;
+      border-left: 6px solid #90caf9;
+      color: #1565c0;
+      background: #f4f8fb;
+    }
+    .home-link-btn {
+      display: block;
+      width: 100%;
+      margin: 24px auto 0 auto;
+      background: #1976d2;
+      color: #fff;
+      font-size: 1.13em;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(33,150,243,0.07);
+      padding: 18px 0;
+      text-decoration: none;
+      transition: background 0.18s, transform 0.13s;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+    }
+    .home-link-btn:hover {
+      background: #1565c0;
+      color: #fff;
+      transform: scale(1.03);
+    }
+    .guide-title {
+      display: block;
+      font-size: 1.08em;
+      font-weight: 800;
+      color: #1976d2;
+      margin-top: 0;
+      margin-bottom: 0;
+      letter-spacing: -0.5px;
+    }
+    .guide-en .guide-title {
+      color: #1565c0;
+    }
+    .guide-preview {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      max-height: 6.2em;
+      text-overflow: ellipsis;
+      white-space: pre-line;
+      position: relative;
+      transition: max-height 0.3s;
+      line-height: 1.25;
+    }
+    .guide-full {
+      overflow: visible;
+      display: block;
+      max-height: none;
+      line-height: 1.25;
+      white-space: pre-line;
+    }
+    .guide-toggle-btn {
+      margin-top: 4px;
+      background: #b3e5fc;
+      color: #1976d2;
+      font-size: 0.98em;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      padding: 7px 18px;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s;
+      box-shadow: 0 1px 4px rgba(33,150,243,0.07);
+      display: inline-block;
+    }
+    .guide-toggle-btn:hover {
+      background: #90caf9;
+      color: #0d47a1;
+    }
+    @media (max-width: 600px) {
+      .home-container {
+        padding: 12px 2px 18px 2px;
+      }
+      .home-title {
+        font-size: 1.3em;
+        margin-bottom: 18px;
+      }
+      .room-grid {
+        gap: 10px;
+      }
+      .room-btn {
+        font-size: 1.1em;
+        padding: 18px 0;
+        min-height: 44px;
+      }
+      .guide-box {
+        font-size: 0.98em;
+        padding: 12px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <div class="home-title">남산분원 전시실 탐구일지</div>
+    <div class="room-grid">
+      <a class="room-btn" href="https://forms.gle/Si1c9autLGFA2t2P8">제1전시실</a>
+      <a class="room-btn" href="https://forms.gle/3Uf8C7A1tZUnTrMN6">제2전시실</a>
+      <a class="room-btn" href="https://forms.gle/9Jeq8FSgHA8UfJ8FA">제3전시실</a>
+      <a class="room-btn" href="https://forms.gle/FEN2CG1j2bJAihrg7">수학체험관</a>
+    </div>
+    <div class="guide-box" id="guide-box">
+      <span class="guide-title">이용안내</span>
+      <div id="guide-text" class="guide-preview">불러오는 중...</div>
+      <button class="guide-toggle-btn" id="guide-toggle-btn" style="display:none">더보기</button>
+    </div>
+    <div class="guide-box guide-en" id="guide-en-box">
+      <span class="guide-title">Information</span>
+      <div id="guide-en-text" class="guide-preview">Loading English guide...</div>
+      <button class="guide-toggle-btn" id="guide-en-toggle-btn" style="display:none">More</button>
+    </div>
+    <a class="home-link-btn" href="https://ssei.sen.go.kr/" target="_blank" rel="noopener">융합과학교육원 홈페이지</a>
+  </div>
+  <!-- <div style="text-align:center; font-size:0.92em; color:#888; margin:32px 0 12px 0;">이 사이트는 퀴즈 진행을 위해 쿠키를 사용합니다.</div> -->
+  <script>
+    // 안내문 미리보기 최대 글자수
+    const GUIDE_PREVIEW_LEN = 160;
+    function setGuideBox(text, textElem, btnElem, moreLabel, lessLabel) {
+      if (text.length <= GUIDE_PREVIEW_LEN) {
+        textElem.innerText = text;
+        btnElem.style.display = 'none';
+        textElem.classList.remove('guide-full');
+        textElem.classList.remove('guide-preview');
+        return;
+      }
+      let preview = text.slice(0, GUIDE_PREVIEW_LEN);
+      // 줄바꿈 기준으로 4줄까지만 미리보기
+      const lines = text.split(/\r?\n/);
+      let previewLines = [];
+      let charCount = 0;
+      for (let l of lines) {
+        if (previewLines.length < 4 && charCount + l.length <= GUIDE_PREVIEW_LEN) {
+          previewLines.push(l);
+          charCount += l.length + 1;
+        } else {
+          break;
+        }
+      }
+      if (previewLines.length > 0) preview = previewLines.join('\n');
+      textElem.innerText = preview + '...';
+      textElem.classList.add('guide-preview');
+      textElem.classList.remove('guide-full');
+      btnElem.textContent = moreLabel;
+      btnElem.style.display = '';
+      let expanded = false;
+      btnElem.onclick = () => {
+        expanded = !expanded;
+        if (expanded) {
+          textElem.innerText = text;
+          textElem.classList.add('guide-full');
+          textElem.classList.remove('guide-preview');
+          btnElem.textContent = lessLabel;
+        } else {
+          textElem.innerText = preview + '...';
+          textElem.classList.add('guide-preview');
+          textElem.classList.remove('guide-full');
+          btnElem.textContent = moreLabel;
+        }
+      };
+    }
+    fetch('data/guide.txt')
+      .then(res => res.ok ? res.text() : Promise.reject('가이드 파일을 불러올 수 없습니다.'))
+      .then(text => {
+        setGuideBox(text, document.getElementById('guide-text'), document.getElementById('guide-toggle-btn'), '더보기', '접기');
+      })
+      .catch(err => {
+        document.getElementById('guide-text').textContent = '이용 안내를 불러오지 못했습니다.';
+        document.getElementById('guide-toggle-btn').style.display = 'none';
+      });
+    fetch('data/guide_en.txt')
+      .then(res => res.ok ? res.text() : Promise.reject('Failed to load English guide.'))
+      .then(text => {
+        setGuideBox(text, document.getElementById('guide-en-text'), document.getElementById('guide-en-toggle-btn'), 'More', 'Less');
+      })
+      .catch(err => {
+        document.getElementById('guide-en-text').textContent = 'Failed to load English guide.';
+        document.getElementById('guide-en-toggle-btn').style.display = 'none';
+      });
+  </script>
+</body>
+</html>
