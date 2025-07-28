@@ -1,0 +1,6 @@
+﻿id,type,question_text,question_img,choice1_text,choice1_img,choice2_text,choice2_img,choice3_text,choice3_img,choice4_text,choice4_img,choice5_text,choice5_img,row1,row2,row3,col1,col2,col3,col4,answer_row1,answer_row2,answer_row3,answer,explanation
+1,singleimg,[도르래] 25kg의 추를 들어봅시다. 어떤 것이 가장 힘이 적게 들까요?,, ,data/01A/dor1.png, ,data/01A/dor2.png, ,data/01A/dor3.png,,,,,,,,,,,,,,,data/01A/dor3.png,첫 번째 도르래는 힘의 이득이 없습니다. 두 번째는 물체 무게의 1/2의 힘으로 세 번째는 1/3의 힘으로 물체를 들어 올릴 수 있습니다.
+2,singleimg,[지레] 25kg의 추를 들어봅시다. 어떤 것이 가장 힘이 적게 들까요?,, ,data/01A/ji1.png, ,data/01A/ji2.png,,,,,,,,,,,,,,,,,data/01A/ji2.png,두 지레는 받침점의 위치를 제외하고는 모두 동일합니다. 받침점이 물체에 더 가까이 있을수록 작은 힘으로 물체를 들어올릴 수 있습니다.
+3,singleimg,[배가 뜨는 원리] 무게가 같은 두 왕관을 물 속에 넣었을 때 저울은 어떻게 될까요?,data/01A/crown_0.png, ,data/01A/crown_1.png, ,data/01A/crown_2.png, ,data/01A/crown_3.png,,,,,,,,,,,,,,,data/01A/crown_2.png,무게가 같고 크기가 다른 2개의 왕관을 물 속에 넣으면 부피가 작은 왕관쪽으로 저울이 기울어집니다. 이 현상은 부력으로 설명할 수 있으며 왕관의 부피가 크면 부력도 커지므로 부피가 작은 왕관 쪽으로 기울어집니다.
+4,singleimg,[원심분리] 원심분리는 밀도차를 이용하여 물질을 분류합니다. 다음의 전시물은 원심분리 후 어떻게 될까요?,data/01A/cent_0.png,,data/01A/cent_1.png,,data/01A/cent_2.png,,data/01A/cent_3.png,,,,,,,,,,,,,,,data/01A/cent_1.png,밀도가 큰 물질이 작은 물질보다 원심력이 크게 작용하므로 더 빨리 밖으로 밀려 나가게 됩니다.
+
