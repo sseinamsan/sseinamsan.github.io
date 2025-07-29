@@ -287,6 +287,7 @@ td, th {
 /* 특정 퀴즈 이미지 크기 조정 */
 .quiz-question-img[src*="회전체.png"],
 .quiz-question-img[src*="귀의구조.jpg"],
+.quiz-question-img[src*="사이클로이드.png"],
 .quiz-question-img[src*="탑리지층.png"] {
   width: 90% !important;
   max-width: 400px !important;
@@ -633,6 +634,7 @@ td, th {
 @media (max-width: 600px) {
   .quiz-question-img[src*="회전체.png"],
   .quiz-question-img[src*="귀의구조.jpg"],
+  .quiz-question-img[src*="사이클로이드.png"],
   .quiz-question-img[src*="탑리지층.png"] {
     width: 85% !important;
     max-width: 350px !important;
@@ -643,6 +645,7 @@ td, th {
 @media (max-width: 480px) {
   .quiz-question-img[src*="회전체.png"],
   .quiz-question-img[src*="귀의구조.jpg"],
+  .quiz-question-img[src*="사이클로이드.png"],
   .quiz-question-img[src*="탑리지층.png"] {
     width: 80% !important;
     max-width: 300px !important;
@@ -653,6 +656,7 @@ td, th {
 @media (max-width: 360px) {
   .quiz-question-img[src*="회전체.png"],
   .quiz-question-img[src*="귀의구조.jpg"],
+  .quiz-question-img[src*="사이클로이드.png"],
   .quiz-question-img[src*="탑리지층.png"] {
     width: 75% !important;
     max-width: 250px !important;
